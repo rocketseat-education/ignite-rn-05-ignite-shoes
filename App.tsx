@@ -13,6 +13,8 @@ import { CartContextProvider } from './src/contexts/CartContext';
 const oneSignalAppId = Platform.OS === 'ios' ? '2b542c58-e2e9-48f1-8bff-004caefe40c4' : 'dd6753a9-19ad-4f0f-b1c3-700cff7f9dcc';
 OneSignal.setAppId(oneSignalAppId);
 
+OneSignal.setEmail('rodrigo@email.com');
+
 OneSignal.promptForPushNotificationsWithUserResponse(response => {
   console.log(response);
 })
